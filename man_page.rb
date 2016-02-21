@@ -14,19 +14,14 @@ def command_menu
   com_select = gets
 
   case com_select.to_i
-
     when 1
       puts `man cp`
-      
     when 2 
       puts `man mv`
-
     when 3
       puts `man cd`
-        
     when 4
       puts `man ls`
-       
     else
       puts "---ERROR UNKNOWN SELECTION---"
   end
@@ -50,15 +45,12 @@ def main_menu
     case selection
       when 1
         command_menu
-
       when 2
         print "What Command Are You Looking For?:"
         search_term = gets.strip
         puts `man #{search_term}`
-  
       when 3 
         continue = false
-    
       else 
         puts "!!!YOU HAD ONE JOB. TRY AGAIN!!!"
     end
