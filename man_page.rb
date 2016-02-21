@@ -27,8 +27,6 @@ def command_menu
   end
 end
   
-
-
 def main_menu
 
   continue = true
